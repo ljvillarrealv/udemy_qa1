@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.11 on win32)" generated="20230422 13:42:43.983" rpa="false" schemaversion="3">
+<suite id="s1" name="Primeraautomatizacion" source="C:\Users\lvillareal\OneDrive - Novopayment Inc\Escritorio\Curso\QA\Automation\primeraautomatizacion.robot">
+<test id="s1-t1" name="G001 Búsqueda de palabras en google" line="7">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230422 13:42:44.239" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20230422 13:42:44.239" endtime="20230422 13:42:46.895"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=//*[@id="hplogo"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230422 13:42:46.897" endtime="20230422 13:42:46.960"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//*[@id="lst-ib"]</arg>
+<arg>casos de prueba</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230422 13:42:46.961" level="INFO">Typing text 'casos de prueba' into text field 'xpath=//*[@id="lst-ib"]'.</msg>
+<msg timestamp="20230422 13:42:47.080" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230422 13:42:47.081" level="FAIL">Element with locator 'xpath=//*[@id="lst-ib"]' not found.</msg>
+<status status="FAIL" starttime="20230422 13:42:46.961" endtime="20230422 13:42:47.082"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="hplogo"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:47.083" endtime="20230422 13:42:47.083"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:47.083" endtime="20230422 13:42:47.083"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>casos de prueba - Buscar con Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:47.083" endtime="20230422 13:42:47.084"/>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<arg>casos de prueba</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:47.084" endtime="20230422 13:42:47.084"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:47.084" endtime="20230422 13:42:47.084"/>
+</kw>
+<status status="FAIL" starttime="20230422 13:42:44.239" endtime="20230422 13:42:47.085">Element with locator 'xpath=//*[@id="lst-ib"]' not found.</status>
+</test>
+<test id="s1-t2" name="G002 Hacer click en el botón de búsqueda sin escribir palabras en Google" line="17">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230422 13:42:47.086" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20230422 13:42:47.086" endtime="20230422 13:42:49.304"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=//*[@id="hplogo"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230422 13:42:49.304" endtime="20230422 13:42:49.331"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230422 13:42:49.332" level="INFO">Clicking element 'xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]'.</msg>
+<msg timestamp="20230422 13:42:49.454" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230422 13:42:49.455" level="FAIL">Element with locator 'xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]' not found.</msg>
+<status status="FAIL" starttime="20230422 13:42:49.331" endtime="20230422 13:42:49.455"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:49.456" endtime="20230422 13:42:49.456"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230422 13:42:49.457" endtime="20230422 13:42:49.457"/>
+</kw>
+<status status="FAIL" starttime="20230422 13:42:47.085" endtime="20230422 13:42:49.457">Element with locator 'xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]' not found.</status>
+</test>
+<doc>Existe en un documento de texto los pasos manuales
+Esta es mi primera automatizacion</doc>
+<status status="FAIL" starttime="20230422 13:42:43.986" endtime="20230422 13:42:49.458"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Primeraautomatizacion">Primeraautomatizacion</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
